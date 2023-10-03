@@ -11,23 +11,27 @@ public class Celular {
         Scanner input = new Scanner(System.in);
         
         System.out.println("Vendedor, qual o valor do celular?");
-        float valorCelular = input.nextFloat();
+        float valorCelular = input.nextFloat();        
         
-        System.out.println("Qual a forma de pagamento? \n" + 
-                "Digite 1 para a vista ou 2 para parcelado");
+        char formaDePagamento;        
         
-        char formaDePagamento = input.next().charAt(0);
         
-        float orcamento = 1750.00f;
-        float desconto = 0f;
-        
-        if (formaDePagamento != '1' || formaDePagamento != '2') {
-            formaDePagamento = '0';
-            System.out.println("Permitido apenas 1 ou 2");
+        while (true) {            
             System.out.println("Qual a forma de pagamento? \n" + 
                 "Digite 1 para a vista ou 2 para parcelado");
-            formaDePagamento = input.next().charAt(0);            
-        } else if (formaDePagamento == '1') {
+            formaDePagamento = input.next().charAt(0);
+            
+            if (formaDePagamento == '1' || formaDePagamento == '2') {
+                break;
+            } else {
+                System.out.println("Entrada inválida, permitido apenas 1 ou 2");
+            }
+        }
+        
+        float orcamento = 1750.00f;
+        float desconto = 0f;        
+             
+        if (formaDePagamento == '1') {
             System.out.println("Pagamento a vista");
             desconto = valorCelular * 0.10f;
         }         
