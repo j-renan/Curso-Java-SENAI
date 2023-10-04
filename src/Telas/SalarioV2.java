@@ -145,7 +145,7 @@ public class SalarioV2 extends javax.swing.JFrame {
         } else if (valorDoAumento > 450.00f) {
             avaliacaoAumento = "Você teve um baita de um aumento de salário";
         } else {
-            avaliacaoAumento = "Esse aumento não da nem pra pagar uma pinga";
+            avaliacaoAumento = "Esse aumento não da nem pra pagar uma pinga!";
         }
 
         String mensagem = "Prezado " + nome + "\n"
