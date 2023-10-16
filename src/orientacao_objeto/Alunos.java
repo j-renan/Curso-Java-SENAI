@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package orientacao_objeto;
 
-/**
- *
- * @author Aluno
- */
 public class Alunos {
+    private String nome;
+    private byte idade;
+    private float nota;
+    private float altura;
+    private String email;
+    
     
 }
