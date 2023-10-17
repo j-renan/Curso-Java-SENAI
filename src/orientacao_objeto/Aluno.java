@@ -1,17 +1,17 @@
 
 package orientacao_objeto;
 
-public class Alunos {
+public class Aluno {
     private String nome;
-    private byte idade;
+    private int idade;
     private float nota;
     private float altura;
     private String email;
     
-    public Alunos() {             
+    public Aluno() {             
     }
 
-    public Alunos(String nome, byte idade, float nota, float altura, String email) {
+    public Aluno(String nome, int idade, float nota, float altura, String email) {
         this.nome = nome;
         this.idade = idade;
         this.nota = nota;
@@ -19,10 +19,10 @@ public class Alunos {
         this.email = email;
     }
 
-    public Alunos(String nome, String email, byte idade) {
+    public Aluno(String nome, String email, int idade) {
         this.nome = nome;
         this.email = email;
         this.idade = idade;
-    }   
+    }
      
 }

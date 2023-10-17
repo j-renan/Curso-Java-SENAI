@@ -9,5 +9,16 @@ public class Viagem {
     private float distancia;
     private Date dataIda;
     private Date dataVolta;
-    
+
+    public Viagem() {
+    }
+
+    public Viagem(String destino, float preco, float distancia, Date dataIda, Date dataVolta) {
+        this.destino = destino;
+        this.preco = preco;
+        this.distancia = distancia;
+        this.dataIda = dataIda;
+        this.dataVolta = dataVolta;
+    }    
+        
 }
