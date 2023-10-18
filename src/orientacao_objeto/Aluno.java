@@ -24,5 +24,66 @@ public class Aluno {
         this.email = email;
         this.idade = idade;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public float getNota() {
+        return nota;
+    }
+
+    public void setNota(float nota) {
+        this.nota = nota;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" + "nome=" + nome + ", idade=" + idade + ", nota=" + nota + ", altura=" + altura + ", email=" + email + '}';
+    }
+    
+    public boolean verificarNota() {
+        if (this.nota >= 6.0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public void verificarMaiorIdade() {
+        if (this.idade >= 18) {
+            System.out.println(this.nome + " eh maio de idade");
+        } else {
+            System.out.println(this.nome + " eh menor de idade");
+        }
+    }
      
 }
