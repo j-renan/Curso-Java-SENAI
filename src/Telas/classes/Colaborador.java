@@ -7,11 +7,13 @@ public class Colaborador {
                
     private String nome;
     private float valorDoAumento;
-    private float salarioAtual;    
+    private float salarioAtual = 100;    
 
     public Colaborador(String nome, float salarioAtual) {        
         this.nome = nome;
-        this.salarioAtual = salarioAtual;
+        if (salarioAtual > this.salarioAtual) {
+            this.salarioAtual = salarioAtual;        
+        }
     }
 
     public void setNome(String nome) {
@@ -24,7 +26,7 @@ public class Colaborador {
     
     public float calcularAumento() {
         this.valorDoAumento = salarioAtual * AUMENTO;
-        return this.valorDoAumento;
+        return this.valorDoAumento;        
     }
     
     public String avaliarAumento() {

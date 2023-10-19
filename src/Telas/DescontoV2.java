@@ -102,6 +102,11 @@ public class DescontoV2 extends javax.swing.JFrame {
 
         jComboBoxDesconto.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jComboBoxDesconto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1%", "2%", "3%", "5%", "8%", "10%", "12%", "15%", "20%" }));
+        jComboBoxDesconto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxDescontoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -192,6 +197,10 @@ public class DescontoV2 extends javax.swing.JFrame {
     private void jTextFieldPrecoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldPrecoKeyReleased
         this.onlyNumber(evt, jTextFieldPreco);
     }//GEN-LAST:event_jTextFieldPrecoKeyReleased
+
+    private void jComboBoxDescontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxDescontoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxDescontoActionPerformed
     
     public void onlyNumber(java.awt.event.KeyEvent evt, javax.swing.JTextField txtField) {
         char c = evt.getKeyChar();
